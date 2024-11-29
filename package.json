@@ -1,0 +1,30 @@
+{
+  "name": "skloa",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@cloudinary/url-gen": "^1.21.0",
+    "@cloudinary/vue": "^1.12.1",
+    "@popperjs/core": "^2.11.8",
+    "@supabase/supabase-js": "^2.45.0",
+    "@vue/compat": "^3.4.31",
+    "@vuesimple/vs-alert": "^3.0.7",
+    "axios": "^1.7.7",
+    "html2pdf.js": "^0.10.2",
+    "nodemailer": "^6.9.14",
+    "swiper": "^11.1.4",
+    "v-calendar": "^3.1.2",
+    "vue": "^3.4.21",
+    "vue3-toastify": "^0.2.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.8"
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/v-calendar"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+
+
+
+<template>
+  <div class="bg-white p-4 rounded-lg shadow-md flex justify-between items-center">
+    <div class="flex items-center">
+      <!-- Progress Circle -->
+      <div class="relative">
+        <div class="w-20 h-20 flex items-center justify-center">
+          <div class="absolute inset-0 rounded-full border-4 border-gray-200"></div>
+          <div class="absolute inset-0 rounded-full border-4 border-blue-600" :style="{ transform: 'rotate(-90deg)', strokeDasharray: 'calc(80 * 31.4 / 100) 31.4', }"></div>
+          <span class="text-blue-600 text-lg font-semibold">80%</span>
+        </div>
+      </div>
+      <!-- Lesson Details -->
+      <div class="ml-4">
+        <p class="text-lg font-semibold">Today's Lesson</p>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+          <div class="flex items-center">
+            <i class='bx bxs-book-alt text-gray-500 mr-2'></i>
+            <span>Class</span>
+            <span class="ml-auto font-medium">Electrical Engg</span>
+          </div>
+          <div class="flex items-center">
+            <i class='bx bxs-file text-gray-500 mr-2'></i>
+            <span>Assignment</span>
+            <span class="ml-auto font-medium">5 Assignment</span>
+          </div>
+          <div class="flex items-center">
+            <i class='bx bxs-book text-gray-500 mr-2'></i>
+            <span>Lessons</span>
+            <span class="ml-auto font-medium">5 Lessons</span>
+          </div>
+          <div class="flex items-center">
+            <i class='bx bxs-user text-gray-500 mr-2'></i>
+            <span>Staff</span>
+            <span class="ml-auto font-medium">John Doe</span>
+          </div>
+          <div class="flex items-center">
+            <i class='bx bxs-time text-gray-500 mr-2'></i>
+            <span>Time</span>
+            <span class="ml-auto font-medium">Lessons</span>
+          </div>
+          <div class="flex items-center">
+            <i class='bx bxs-check-circle text-gray-500 mr-2'></i>
+            <span>Lesson Learned</span>
+            <span class="ml-auto font-medium">10/50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons -->
+    <div class="flex flex-col items-end space-y-2">
+      <button class="bg-gray-100 text-gray-500 px-4 py-2 rounded-lg">skip</button>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Continue</button>
+    </div>
+  </div>
+</template>
+
+<script>
+
+</script>
+
+<style scoped>
+
+</style>
+
